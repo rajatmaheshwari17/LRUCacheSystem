@@ -3,14 +3,14 @@ CC = gcc
 CFLAGS = -Wall -Wextra
 
 # Executable names
-EXEC_SET = set
-EXEC_HASHTABLE = hashtable
-EXEC_LRU = LRU
+EXEC_SET = test_set
+EXEC_HASHTABLE = test_hashtable
+EXEC_LRU = test_LRU
 
 # Source files
-SRC_SET = set.c
-SRC_HASHTABLE = set.c hashtable.c
-SRC_LRU = set.c hashtable.c lru.c
+SRC_SET = set.c test_set.c
+SRC_HASHTABLE = set.c hashtable.c test_hashtable.c
+SRC_LRU = set.c hashtable.c lru.c test_LRU.c 
 
 # Object files
 OBJ_SET = $(SRC_SET:.c=.o)
